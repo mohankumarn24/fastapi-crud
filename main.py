@@ -82,6 +82,3 @@ app.include_router(product_router)
 ## Run
 # uvicorn main:app --reload
 # http://127.0.0.1:8000/docs
-
-## TODO
-# Paginated response
