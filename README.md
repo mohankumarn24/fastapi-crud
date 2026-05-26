@@ -9,7 +9,7 @@
 
 2. **Install dependencies:**
    ```bash
-   pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv
+   pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydantic-settings
    ```
 
 3. **PostgreSQL Setup**

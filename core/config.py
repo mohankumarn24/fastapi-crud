@@ -1,11 +1,21 @@
 # config.py
 
-from dotenv import load_dotenv
-import os
+from pydantic_settings import (
+    BaseSettings,
+    SettingsConfigDict
+)
 
-load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+class Settings(BaseSettings):
+
+    database_url: str
+
+    model_config = SettingsConfigDict(
+        env_file=".env"
+    )
+
+
+settings = Settings()
 
 
 ## Create a `.env` file in project root
