@@ -2,7 +2,7 @@
 
 1. **Create and activate virtual environment:**
    ```bash
-   python -m venv myenv
+   python -m venv .venv
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
    .venv\Scripts\activate
    ```
@@ -22,7 +22,7 @@
    Create schema:
 
    ```sql
-   CREATE SCHEMA fastapicrud;
+   CREATE SCHEMA fastapi-crud;
    ```
 
 4. Environment Variables
